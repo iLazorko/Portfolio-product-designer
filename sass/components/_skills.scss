@@ -1,0 +1,36 @@
+.skills__container {
+  padding: 64px 20px;
+}
+
+.skills__title {
+  color: $main-subtitle-color;
+  margin-bottom: 16px;
+}
+
+.skills__item + .skills__item {
+  margin-top: 48px;
+}
+
+.skills__text {
+  color: $main-text-color;
+  margin-bottom: 70px;
+}
+
+.skills__subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  align-items: center;
+  color: $main-subtitle-color;
+  margin-bottom: 12px;
+}
+
+.skills__subtext {
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  color: $main-text-color;
+}
+
+.skills__icon {
+  margin-bottom: 24px;
+}

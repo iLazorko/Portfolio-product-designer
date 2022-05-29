@@ -1,0 +1,21 @@
+.hero__container {
+  padding: 0;
+  color: $hero-text-color;
+}
+
+.hero__textwrap {
+  padding: 48px 20px;
+  align-items: center;
+}
+
+.hero__title {
+  margin-bottom: 16px;
+}
+
+.hero__title--text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__text {
+  line-height: 1.5;
+}

@@ -1,0 +1,17 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-btn {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main_bg_color;
+  border: none;
+}

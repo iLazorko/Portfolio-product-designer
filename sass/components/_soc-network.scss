@@ -1,0 +1,24 @@
+.soc-network {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.soc-network__item + .soc-network__item {
+  margin-left: 16px;
+}
+
+.soc-network__link {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid $list-bg-color;
+  border-radius: 8px;
+  transition: border-color 300ms $timing-function,
+    background-color 300ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    background-color: rgb(132, 145, 160, 0.3);
+  }
+}

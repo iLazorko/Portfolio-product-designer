@@ -16,6 +16,7 @@
   display: inline-block;
   font-size: 16px;
   color: $main-subtitle-color;
+  transition: color 300ms $timing-function;
 
   &::after {
     position: absolute;
@@ -27,6 +28,11 @@
     height: 1px;
     background-color: $main-text-color;
   }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .blogs__container {
@@ -34,7 +40,6 @@
   padding: 0 15px 48px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
 }
 
 .blog-list__item:not(:last-child) {

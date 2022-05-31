@@ -1,0 +1,31 @@
+.footer {
+  background-color: $list-bg-color;
+}
+
+.footer .container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.footer-nav {
+  margin-bottom: 47px;
+}
+
+.footer-nav__link {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-size: 16px;
+  color: $main-subtitle-color;
+  transition: color 300ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

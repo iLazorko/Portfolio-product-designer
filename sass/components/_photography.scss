@@ -32,11 +32,12 @@
   color: #ffffff;
   background-color: transparent;
   border: 1px solid $accent-color;
+  border-radius: 4px;
+  transition: background-color 300ms $timing-function;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
-    border: transparent;
   }
 }
 

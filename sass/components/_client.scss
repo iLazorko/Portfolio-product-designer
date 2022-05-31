@@ -15,3 +15,21 @@
   height: 140px;
   border: 1px solid #181823;
 }
+
+.client__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  &:hover .client__icon,
+  &:focus .client__icon {
+    fill: $accent-color;
+  }
+}
+
+.client__icon {
+  fill: $main-text-color;
+  transition: fill 300ms $timing-function;
+}

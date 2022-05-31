@@ -1,11 +1,17 @@
+.header {
+  position: relative;
+}
+
 .header__container {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
 .menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 20px;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -14,4 +20,14 @@
   align-items: center;
   background-color: $main_bg_color;
   border: none;
+  cursor: pointer;
+
+  &:hover .menu-btn__icon,
+  &:focus .menu-btn__icon {
+    fill: $accent-color;
+  }
+}
+
+.menu-btn__icon {
+  fill: #c4c4c4;
 }

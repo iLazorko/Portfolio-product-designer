@@ -1,6 +1,6 @@
 body {
   font-family: 'Sen', sans-serif;
-  font-size: 18px;
+  line-height: 1.5;
   background-color: $main_bg_color;
 }
 
@@ -18,6 +18,19 @@ ul,
 ol {
   padding-left: 0;
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .link {
@@ -40,10 +53,33 @@ img {
   max-width: 360px;
   margin-right: auto;
   margin-left: auto;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 .title {
   font-size: 32px;
-  line-height: 1.19;
+  line-height: 1.2;
+  color: $main-subtitle-color;
+}
+
+.title-small {
+  color: $main-title-color;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 18px;
+  color: $main-text-color;
+}
+
+.list-title {
+  color: $main-subtitle-color;
+  font-size: 24px;
+}
+
+.list-text {
+  font-size: 16px;
+  color: $main-text-color;
 }

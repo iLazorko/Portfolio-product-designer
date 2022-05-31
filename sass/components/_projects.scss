@@ -1,0 +1,24 @@
+.projects__container {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.projects__subtitle {
+  margin-bottom: 80px;
+}
+
+.projects-list__item {
+  background-color: $list-bg-color;
+
+  & + &{
+    margin-top: 48px;
+  }
+}
+
+.projects-list__wrap {
+  padding: 40px 32px;
+}
+
+.projects-list__title {
+  margin-bottom: 13px;
+}

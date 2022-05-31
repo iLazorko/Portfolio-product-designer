@@ -1,0 +1,49 @@
+.photography .container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.photography__title {
+  margin-bottom: 24px;
+}
+
+.photography__text {
+  margin-bottom: 40px;
+}
+
+.photo-filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+.photo-filter__item {
+  flex-basis: calc((100% - 2 * 24px) / 2);
+  margin: 12px;
+}
+
+.photo-filter__btn {
+  display: block;
+  padding: 12px 0;
+  width: 148px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border: transparent;
+  }
+}
+
+.photo-btn {
+  margin-bottom: 40px;
+}
+
+.photo-list__item + .photo-list__item {
+  margin-top: 24px;
+}

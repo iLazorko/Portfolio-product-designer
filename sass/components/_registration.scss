@@ -1,0 +1,77 @@
+.registration .container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.registration__title {
+  margin-bottom: 16px;
+}
+
+.registration__text {
+  margin-bottom: 48px;
+}
+
+.reg-form__wrap {
+  margin-bottom: 40px;
+}
+
+.reg-form__label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  color: #ffffff;
+}
+
+.reg-form__input,
+.reg-form__message {
+  width: 100%;
+  background-color: $list-bg-color;
+  border: transparent;
+  color: $main-text-color;
+  font-size: 16px;
+}
+
+.reg-form__input {
+  height: 50px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.reg-form__message {
+  height: 100px;
+  resize: none;
+  margin-bottom: -6px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.reg-form__btn {
+  background-color: $accent-color;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $accent-color;
+    background-color: #ffffff;
+    color: $accent-color;
+  }
+}

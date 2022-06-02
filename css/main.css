@@ -613,7 +613,8 @@ img {
 .photo-filter__btn {
   display: block;
   padding: 12px 0;
-  width: 148px;
+  max-width: 148px;
+  width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;

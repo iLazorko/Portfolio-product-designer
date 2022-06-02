@@ -5,17 +5,31 @@
 .network-item__wrap {
   padding: 48px 20px;
   background-color: #fbe4ff;
+
+  @media screen and (min-width: 768px) {
+    padding: 80px 40px;
+    width: 50%;
+  }
 }
 
 .network-item__title {
   color: $second-title-color;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 
 .network-item__text {
   &.first-text {
     color: $second-text-color;
     margin-bottom: 125px;
+    font-size: 18px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 133px;
+    }
   }
 
   &.second-text {
@@ -54,11 +68,26 @@
 .second-link {
   margin-bottom: 64px;
   color: $main-subtitle-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+}
+
+.item-first {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .item-second {
   padding-top: 64px;
   padding-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .network-item__heading {
@@ -67,6 +96,13 @@
 }
 
 .network-item__img {
-  border-radius: 8px;
-  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.network-item__img--second {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

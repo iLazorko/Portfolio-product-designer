@@ -1,18 +1,36 @@
 .hero__container {
+  position: relative;
   padding: 0;
   color: $hero-text-color;
 }
 
 .hero__textwrap {
   padding: 48px 20px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    padding: 0 40px 0 0;
+    top: 87px;
+    left: 320px;
+  }
 }
 
 .hero__title {
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .hero__title--text {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__title span {
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .hero__text {

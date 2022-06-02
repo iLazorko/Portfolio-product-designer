@@ -33,6 +33,26 @@
             ></use>
           </svg>
         </button>
+        <div class="header__menu">
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="#work" class="site-nav__link link">Experience</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#projects" class="site-nav__link link">Work</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#photography" class="site-nav__link link">Photography</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#networks" class="site-nav__link link">Contact</a>
+            </li>
+          </ul>
+
+          <button type="button" class="site-nav__btn">Contact us</button>
+        </div>
+
+        <!-- -----------------MOBILE-MENU---------------------- -->
         <div class="site-nav mob-menu is-hidden">
           <button type="button" class="menu-close-btn">
             <svg width="40" height="40">
@@ -98,7 +118,14 @@
                 ./img/hero/hero-mobile.jpg    1x,
                 ./img/hero/hero-mobile@2x.jpg 2x
               "
-              media="(max-width:360px)"
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./img/hero/hero-tablet.jpg    1x,
+                ./img/hero/hero-tablet@2x.jpg 2x
+              "
+              media="(max-width:1439px)"
             />
 
             <img
@@ -109,7 +136,7 @@
           </picture>
           <div class="hero__textwrap">
             <h1 class="hero__title title">
-              I’m Robin Williams. A Product Designer
+              I’m Robin Williams. <span>A Product</span> Designer
               <span class="hero__title--text"> based in Italy. </span>
             </h1>
             <p class="hero__text">
@@ -186,7 +213,14 @@
                 ./img/about/about-mobile.jpg    1x,
                 ./img/about/about-mobile@2x.jpg 2x
               "
-              media="(max-width:360px)"
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./img/about/about-tablet.jpg    1x,
+                ./img/about/about-tablet@2x.jpg 2x
+              "
+              media="(max-width:1439px)"
             />
 
             <img
@@ -196,6 +230,7 @@
           </picture>
         </div>
       </section>
+
       <!-- ----------------------------SKILLS------------------------ -->
       <section class="skills">
         <div class="container skills__container">
@@ -320,6 +355,7 @@
           </ul>
         </div>
       </section>
+
       <!-- ----------------PROJECTS------------------------------ -->
       <section class="projects" id="projects">
         <div class="container projects__container">
@@ -336,12 +372,19 @@
                       ./img/projects/project1-mobile.jpg    1x,
                       ./img/projects/project1-mobile@2x.jpg 2x
                     "
-                    media="(max-width:360px)"
+                    media="(max-width:767px)"
                   />
-
+                  <source
+                    srcset="
+                      ./img/projects/project1-tablet.jpg    1x,
+                      ./img/projects/project1-tablet@2x.jpg 2x
+                    "
+                    media="(max-width:1439px)"
+                  />
                   <img
                     src="./img/projects/project1-mobile.jpg"
                     alt="Restaurant photo 1"
+                    class="projects-list__img"
                   />
                 </picture>
                 <div class="projects-list__wrap">
@@ -364,12 +407,20 @@
                       ./img/projects/project2-mobile.jpg    1x,
                       ./img/projects/project2-mobile@2x.jpg 2x
                     "
-                    media="(max-width:360px)"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/project2-tablet.jpg    1x,
+                      ./img/projects/project2-tablet@2x.jpg 2x
+                    "
+                    media="(max-width:1439px)"
                   />
 
                   <img
                     src="./img/projects/project2-mobile.jpg"
                     alt="Restaurant photo 2"
+                    class="projects-list__img"
                   />
                 </picture>
                 <div class="projects-list__wrap">
@@ -392,12 +443,20 @@
                       ./img/projects/project3-mobile.jpg    1x,
                       ./img/projects/project3-mobile@2x.jpg 2x
                     "
-                    media="(max-width:360px)"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/project3-tablet.jpg    1x,
+                      ./img/projects/project3-tablet@2x.jpg 2x
+                    "
+                    media="(max-width:1439px)"
                   />
 
                   <img
                     src="./img/projects/project3-mobile.jpg"
                     alt="Restaurant photo 3"
+                    class="projects-list__img"
                   />
                 </picture>
                 <div class="projects-list__wrap">
@@ -420,12 +479,20 @@
                       ./img/projects/project4-mobile.jpg    1x,
                       ./img/projects/project4-mobile@2x.jpg 2x
                     "
-                    media="(max-width:360px)"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/project4-tablet.jpg    1x,
+                      ./img/projects/project4-tablet@2x.jpg 2x
+                    "
+                    media="(max-width:1439px)"
                   />
 
                   <img
                     src="./img/projects/project4-mobile.jpg"
                     alt="Restaurant photo 4"
+                    class="projects-list__img"
                   />
                 </picture>
                 <div class="projects-list__wrap">
@@ -456,6 +523,7 @@
                 and I capture the best moments that I would love to cherish with
                 the world
               </p>
+
               <a href="" class="network-list__link link first-link"
                 >Follow me on IG</a
               >
@@ -466,48 +534,62 @@
                   ./img/network/insta-mobile.jpg    1x,
                   ./img/network/insta-mobile@2x.jpg 2x
                 "
-                media="(max-width:360px)"
+                media="(max-width:767px)"
               />
               <img
                 src="./img/network/insta-mobile.jpg"
-                alt="Photo Robin Williams"
+                alt="Photo"
+                class="network-item__img"
+              />
+            </picture>
+
+            <picture>
+              <source
+                srcset="
+                  ./img/network/insta-tablet.jpg    1x,
+                  ./img/network/insta-tablet@2x.jpg 2x
+                "
+                media="(max-width:1439px)"
+              />
+              <img
+                src="./img/network/insta-tablet.jpg"
+                alt="Photo"
+                class="network-item__img--second"
               />
             </picture>
           </div>
         </div>
-        <div class="container">
-          <div class="network-item item-second">
-            <h3 class="network-item__heading title">Dribbble</h3>
-            <p class="network-item__text second-text text">
-              Each dribbble shot is made with love and care. Do check out my
-              work on Dribbble. Likes and comments are appreciated.
-            </p>
-            <a href="" class="network-list__link link second-link"
-              >Follow me on Dribbble</a
-            >
+        <div class="container network-item item-second">
+          <h3 class="network-item__heading title">Dribbble</h3>
+          <p class="network-item__text second-text text">
+            Each dribbble shot is made with love and care. Do check out my work
+            on Dribbble. Likes and comments are appreciated.
+          </p>
+          <a href="" class="network-list__link link second-link"
+            >Follow me on Dribbble
+          </a>
 
-            <!-- ----------SLIDER-------------------- -->
-            <div>
-              <div class="dots"></div>
-              <div class="slider">
-                <div class="slider__item">
-                  <img src="./img/sliders/photo1 (1).jpg" alt="photo1" />
-                </div>
-                <div class="slider__item">
-                  <img src="./img/sliders/photo2 (1).jpg" alt="photo2" />
-                </div>
-                <div class="slider__item">
-                  <img src="./img/sliders/photo3 (1).jpg" alt="photo3" />
-                </div>
-                <div class="slider__item">
-                  <img src="./img/sliders/photo4 (1).jpg" alt="photo4" />
-                </div>
-                <div class="slider__item">
-                  <img src="./img/sliders/photo5 (1).jpg" alt="photo5" />
-                </div>
-                <div class="slider__item">
-                  <img src="./img/sliders/photo6 (1).jpg" alt="photo6" />
-                </div>
+          <!-- ----------SLIDER-------------------- -->
+          <div>
+            <div class="dots"></div>
+            <div class="slider">
+              <div class="slider__item">
+                <img src="./img/sliders/photo1 (1).jpg" alt="photo1" />
+              </div>
+              <div class="slider__item">
+                <img src="./img/sliders/photo2 (1).jpg" alt="photo2" />
+              </div>
+              <div class="slider__item">
+                <img src="./img/sliders/photo3 (1).jpg" alt="photo3" />
+              </div>
+              <div class="slider__item">
+                <img src="./img/sliders/photo4 (1).jpg" alt="photo4" />
+              </div>
+              <div class="slider__item">
+                <img src="./img/sliders/photo5 (1).jpg" alt="photo5" />
+              </div>
+              <div class="slider__item">
+                <img src="./img/sliders/photo6 (1).jpg" alt="photo6" />
               </div>
             </div>
           </div>
@@ -516,89 +598,91 @@
 
       <!-- ------------------BLOGS--------------------------- -->
       <section class="blogs" id="blog">
-        <div class="container">
-          <h2 class="visually-hidden">Bloggers</h2>
-          <h3 class="blogs__title title">This is what people say about me</h3>
-          <p class="blogs__text text">
-            Here are a few lines from people who I have worked with over the
-            past 8+ years in my design career.
-          </p>
-          <a href="" class="blogs__link link">See all testimonials</a>
-        </div>
         <div class="blogs__container">
-          <ul class="blog-list">
-            <li class="blog-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/blogs/blogs1-mobile.jpg    1x,
-                    ./img/blogs/blogs1-mobile@2x.jpg 2x
-                  "
-                  media="(max-width:360px)"
-                />
-                <img
-                  src="./img/blogs/blogs1-mobile.jpg"
-                  alt="blogger's photo"
-                />
-              </picture>
-              <div class="blog-list__text">
-                <p class="blog-list__title list-title">
-                  ‘’Robin is one of the best designers I have worked with in my
-                  entire life. He is a designer who is very capable of taking up
-                  complex projects and delivers impeccable design.’’
-                </p>
-                <p class="blog-list__toptext text">Richard Owens</p>
-                <p class="blog-bottomtext text">CEO, Company 1</p>
-              </div>
-            </li>
-            <li class="blog-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/blogs/blogs2-mobile.jpg    1x,
-                    ./img/blogs/blogs2-mobile@2x.jpg 2x
-                  "
-                  media="(max-width:360px)"
-                />
-                <img
-                  src="./img/blogs/blogs2-mobile.jpg"
-                  alt="blogger's photo"
-                />
-              </picture>
-              <div class="blog-list__text">
-                <p class="blog-list__title list-title">
-                  ‘’I think Robin has an incredible gift. It has been an
-                  absolute pleasure to work with a designer of this caliber.’’
-                </p>
-                <p class="blog-list__toptext text">Emily Parker</p>
-                <p class="blog-bottomtext text">CEO, Company 2</p>
-              </div>
-            </li>
-            <li class="blog-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/blogs/blogs3-mobile.jpg    1x,
-                    ./img/blogs/blogs3-mobile@2x.jpg 2x
-                  "
-                  media="(max-width:360px)"
-                />
-                <img
-                  src="./img/blogs/blogs3-mobile.jpg"
-                  alt="blogger's photo"
-                />
-              </picture>
-              <div class="blog-list__text">
-                <p class="blog-list__title list-title">
-                  ‘’All I can say that, Robin is a phenomenal designer. The
-                  wavelength at which he thinks is astoundaing. I love the
-                  focus, passion and attention to detial in the design.’’
-                </p>
-                <p class="blog-list__toptext text">Vincent Rudd</p>
-                <p class="blog-bottomtext text">CEO, Company 3</p>
-              </div>
-            </li>
-          </ul>
+          <div class="container">
+            <h2 class="visually-hidden">Bloggers</h2>
+            <h3 class="blogs__title title">This is what people say about me</h3>
+            <p class="blogs__text text">
+              Here are a few lines from people who I have worked with over the
+              past 8+ years in my design career.
+            </p>
+            <a href="" class="blogs__link link">See all testimonials</a>
+          </div>
+          <div class="blogs__container">
+            <ul class="blog-list">
+              <li class="blog-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/blogs/blogs1-mobile.jpg    1x,
+                      ./img/blogs/blogs1-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:360px)"
+                  />
+                  <img
+                    src="./img/blogs/blogs1-mobile.jpg"
+                    alt="blogger's photo"
+                  />
+                </picture>
+                <div class="blog-list__text">
+                  <p class="blog-list__title list-title">
+                    ‘’Robin is one of the best designers I have worked with in
+                    my entire life. He is a designer who is very capable of
+                    taking up complex projects and delivers impeccable design.’’
+                  </p>
+                  <p class="blog-list__toptext text">Richard Owens</p>
+                  <p class="blog-bottomtext text">CEO, Company 1</p>
+                </div>
+              </li>
+              <li class="blog-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/blogs/blogs2-mobile.jpg    1x,
+                      ./img/blogs/blogs2-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:360px)"
+                  />
+                  <img
+                    src="./img/blogs/blogs2-mobile.jpg"
+                    alt="blogger's photo"
+                  />
+                </picture>
+                <div class="blog-list__text">
+                  <p class="blog-list__title list-title">
+                    ‘’I think Robin has an incredible gift. It has been an
+                    absolute pleasure to work with a designer of this caliber.’’
+                  </p>
+                  <p class="blog-list__toptext text">Emily Parker</p>
+                  <p class="blog-bottomtext text">CEO, Company 2</p>
+                </div>
+              </li>
+              <li class="blog-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/blogs/blogs3-mobile.jpg    1x,
+                      ./img/blogs/blogs3-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:360px)"
+                  />
+                  <img
+                    src="./img/blogs/blogs3-mobile.jpg"
+                    alt="blogger's photo"
+                  />
+                </picture>
+                <div class="blog-list__text">
+                  <p class="blog-list__title list-title">
+                    ‘’All I can say that, Robin is a phenomenal designer. The
+                    wavelength at which he thinks is astoundaing. I love the
+                    focus, passion and attention to detial in the design.’’
+                  </p>
+                  <p class="blog-list__toptext text">Vincent Rudd</p>
+                  <p class="blog-bottomtext text">CEO, Company 3</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

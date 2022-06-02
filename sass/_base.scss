@@ -65,12 +65,23 @@ img {
   max-width: 360px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 768px;
+    outline: 1px solid red;
+  }
 }
 
 .title {
   font-size: 32px;
   line-height: 1.2;
   color: $main-subtitle-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 55px;
+  }
 }
 
 .title-small {

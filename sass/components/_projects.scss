@@ -1,6 +1,11 @@
 .projects__container {
   padding-top: 65px;
   padding-bottom: 65px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .projects__subtitle {
@@ -10,7 +15,7 @@
 .projects-list__item {
   background-color: $list-bg-color;
 
-  & + &{
+  & + & {
     margin-top: 48px;
   }
 }

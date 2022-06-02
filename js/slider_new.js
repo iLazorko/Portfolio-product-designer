@@ -5,7 +5,16 @@ $(document).ready(function () {
     slidesToShow: 1,
     centerMode: true,
     rows: 2,
-    slidesPerRow: 1,
     appendDots: $('.dots'),
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          rows: 1,
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
 });

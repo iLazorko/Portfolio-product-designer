@@ -3,10 +3,20 @@
 
   &__container {
     padding: 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__textwrap {
     padding: 48px 20px;
+
+    @media screen and (min-width: 768px) {
+      position: relative;
+      padding: 80px 40px;
+      flex-basis: calc(100% / 2);
+    }
   }
 
   &__title {
@@ -18,6 +28,10 @@
     font-size: 18px;
     color: $second-text-color;
     margin-bottom: 91px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 67px;
+    }
   }
 
   &__link {

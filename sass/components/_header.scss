@@ -6,6 +6,28 @@
   position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+  }
+}
+
+.header__menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
 }
 
 .menu-btn {
@@ -25,6 +47,10 @@
   &:hover .menu-btn__icon,
   &:focus .menu-btn__icon {
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 

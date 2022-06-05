@@ -5,6 +5,19 @@
 .footer .container {
   padding-top: 48px;
   padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.footer__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    height: 195px;
+    margin-bottom: 45px;
+  }
 }
 
 .logo-footer {
@@ -14,6 +27,30 @@
 
 .footer-nav {
   margin-bottom: 47px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: -12px;
+  }
+}
+
+.footer__logowrap {
+  width: calc(100% / 2);
+}
+
+.wrap-item {
+  @media screen and (min-width: 768px) {
+    height: 195px;
+  }
+}
+
+.footer-nav__item {
+  width: 154px;
+  height: 48px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .footer-nav__link {
@@ -28,4 +65,8 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.footer__text {
+  width: 50%;
 }

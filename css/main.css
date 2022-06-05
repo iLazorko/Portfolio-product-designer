@@ -70,7 +70,6 @@ img {
     padding-left: 40px;
     padding-right: 40px;
     max-width: 768px;
-    outline: 1px solid red;
   }
 }
 
@@ -953,13 +952,40 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+@media screen and (min-width: 768px) {
+  .registration .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__wrap {
+    display: flex;
+    margin: -12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration__wrap {
+    flex-basis: calc((100% - 48px) / 2);
+    margin: 12px;
+  }
+}
 
 .registration__title {
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .registration__title {
+    margin-bottom: 24px;
+  }
+}
 
-.registration__text {
-  margin-bottom: 48px;
+@media screen and (max-width: 767px) {
+  .registration__text {
+    margin-bottom: 48px;
+  }
 }
 
 .reg-form__wrap {
@@ -1036,6 +1062,20 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+@media screen and (min-width: 768px) {
+  .footer .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: flex;
+    height: 195px;
+    margin-bottom: 45px;
+  }
+}
 
 .logo-footer {
   display: block;
@@ -1044,6 +1084,31 @@ img {
 
 .footer-nav {
   margin-bottom: 47px;
+}
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: -12px;
+  }
+}
+
+.footer__logowrap {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap-item {
+    height: 195px;
+  }
+}
+
+.footer-nav__item {
+  width: 154px;
+  height: 48px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .footer-nav__link {
@@ -1056,4 +1121,8 @@ img {
 }
 .footer-nav__link:hover, .footer-nav__link:focus {
   color: #5221e6;
+}
+
+.footer__text {
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */

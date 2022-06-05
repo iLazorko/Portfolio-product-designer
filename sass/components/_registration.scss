@@ -1,14 +1,39 @@
 .registration .container {
   padding-top: 48px;
   padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.container__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -12px;
+  }
+}
+
+.registration__wrap {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 24px) / 2);
+    margin: 12px;
+  }
 }
 
 .registration__title {
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 
 .registration__text {
-  margin-bottom: 48px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 48px;
+  }
 }
 
 .reg-form__wrap {

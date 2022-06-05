@@ -815,111 +815,121 @@
       <!-- ---------------REGISTRATION-------------------------------- -->
       <section class="registration" id="registration">
         <div class="container">
-          <h2 class="visually-hidden">Registration</h2>
-          <h3 class="registration__title title">Let’s get started</h3>
-          <p class="registration__text text">
-            Now that you know a lot about me, let me know if you are interested
-            to work with me.
-          </p>
-          <form class="reg-form">
-            <div class="reg-form__wrap">
-              <label for="username" class="reg-form__label">Name</label>
-              <input
-                type="text"
-                name="username"
-                id="username"
-                class="reg-form__input"
-              />
+          <div class="container__wrap">
+            <div class="registration__wrap">
+              <h2 class="visually-hidden">Registration</h2>
+              <h3 class="registration__title title">Let’s get started</h3>
+              <p class="registration__text text">
+                Now that you know a lot about me, let me know if you are
+                interested to work with me.
+              </p>
             </div>
-            <div class="reg-form__wrap">
-              <label for="email" class="reg-form__label">Email</label>
-              <input
-                type="email"
-                name="username"
-                id="email"
-                class="reg-form__input"
-              />
-            </div>
-            <div class="reg-form__wrap">
-              <label for="message" class="reg-form__label">Message</label>
-              <textarea
-                name="comment"
-                id="message"
-                class="reg-form__message"
-              ></textarea>
-            </div>
-            <button type="submit" class="reg-form__btn">
-              Let’s get started
-            </button>
-          </form>
+
+            <form class="reg-form registration__wrap">
+              <div class="reg-form__wrap">
+                <label for="username" class="reg-form__label">Name</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="reg-form__input"
+                />
+              </div>
+              <div class="reg-form__wrap">
+                <label for="email" class="reg-form__label">Email</label>
+                <input
+                  type="email"
+                  name="username"
+                  id="email"
+                  class="reg-form__input"
+                />
+              </div>
+              <div class="reg-form__wrap">
+                <label for="message" class="reg-form__label">Message</label>
+                <textarea
+                  name="comment"
+                  id="message"
+                  class="reg-form__message"
+                ></textarea>
+              </div>
+              <button type="submit" class="reg-form__btn">
+                Let’s get started
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <a href="#" class="logo logo-footer">
-          <svg width="130" height="40">
-            <use href="./img/icons.svg#icon-logo" class="logo__icon"></use>
-          </svg>
-        </a>
-        <ul class="soc-network list">
-          <li class="soc-network__item">
-            <a href="" class="soc-network__link link">
-              <svg width="24" height="24">
-                <use
-                  href="./img/icons.svg#icon-twitter"
-                  class="soc-network__icon"
-                ></use>
+        <div class="footer__wrap">
+          <div class="footer__logowrap wrap-item">
+            <a href="#" class="logo logo-footer">
+              <svg width="130" height="40">
+                <use href="./img/icons.svg#icon-logo" class="logo__icon"></use>
               </svg>
             </a>
-          </li>
-          <li class="soc-network__item">
-            <a href="" class="soc-network__link link">
-              <svg width="24" height="24">
-                <use
-                  href="./img/icons.svg#icon-dribbble"
-                  class="soc-network__icon"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="soc-network__item">
-            <a href="" class="soc-network__link link">
-              <svg width="24" height="24">
-                <use
-                  href="./img/icons.svg#icon-linkedIn"
-                  class="soc-network__icon"
-                ></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <ul class="footer-nav list">
-          <li class="footer-nav__item">
-            <a href="#home" class="footer-nav__link link">Home</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#about" class="footer-nav__link link">About</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#work" class="footer-nav__link link">Work</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link link">Process</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link link">Store</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#blog" class="footer-nav__link link">Blog</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#registration" class="footer-nav__link link"
-              >Reading List</a
-            >
-          </li>
-        </ul>
+            <ul class="soc-network list">
+              <li class="soc-network__item">
+                <a href="" class="soc-network__link link">
+                  <svg width="24" height="24">
+                    <use
+                      href="./img/icons.svg#icon-twitter"
+                      class="soc-network__icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-network__item">
+                <a href="" class="soc-network__link link">
+                  <svg width="24" height="24">
+                    <use
+                      href="./img/icons.svg#icon-dribbble"
+                      class="soc-network__icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-network__item">
+                <a href="" class="soc-network__link link">
+                  <svg width="24" height="24">
+                    <use
+                      href="./img/icons.svg#icon-linkedIn"
+                      class="soc-network__icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-nav list wrap-item">
+            <li class="footer-nav__item">
+              <a href="#home" class="footer-nav__link link">Home</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#about" class="footer-nav__link link">About</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#work" class="footer-nav__link link">Work</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link link">Process</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link link">Store</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#blog" class="footer-nav__link link">Blog</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#registration" class="footer-nav__link link"
+                >Reading List</a
+              >
+            </li>
+          </ul>
+        </div>
         <p class="footer__text list-text">
           Not Copyright 2020 • Robin Williams. Webflow cloneable
         </p>

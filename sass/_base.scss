@@ -60,16 +60,28 @@ img {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 360px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 360px) {
+    width: 360px;
+  }
 
   @media screen and (min-width: 768px) {
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 768px;
+    width: 768px;
+
+    outline: 1px solid green;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 72px;
+    padding-right: 72px;
+    width: 1440px;
+    outline: 1px solid red;
   }
 }
 
@@ -77,7 +89,6 @@ img {
   font-size: 32px;
   line-height: 1.2;
   color: $main-subtitle-color;
-
   @media screen and (min-width: 768px) {
     font-size: 55px;
   }

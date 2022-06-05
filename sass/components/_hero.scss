@@ -13,6 +13,10 @@
     top: 87px;
     left: 320px;
   }
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .hero__title {
@@ -35,4 +39,22 @@
 
 .hero__text {
   font-size: 18px;
+}
+
+.hero__title--desktop {
+  font-size: 76px;
+  line-height: 1.2;
+  text-align: center;
+  color: $main-subtitle-color;
+
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

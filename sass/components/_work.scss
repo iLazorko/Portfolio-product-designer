@@ -6,6 +6,11 @@
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .work__subtitle {
@@ -29,10 +34,16 @@
     margin: 12px;
     padding-right: 15px;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding-right: 48px;
+  }
 }
 
 .work-list__item:not(:last-child) {
-  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
 
 .work-list__number {

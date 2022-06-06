@@ -10,6 +10,10 @@
     padding: 80px 40px;
     width: 50%;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding: 120px 72px;
+  }
 }
 
 .network-item__title {
@@ -34,6 +38,10 @@
 
   &.second-text {
     margin-bottom: 40px;
+
+    @media screen and (min-width: 1440px) {
+      width: 635px;
+    }
   }
 }
 
@@ -87,6 +95,13 @@
   @media screen and (min-width: 768px) {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 182px;
+    padding-right: 182px;
   }
 }
 

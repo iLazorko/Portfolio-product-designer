@@ -71,6 +71,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 64px;
   }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 120px;
+  }
 }
 
 .blog-list__text {
@@ -79,6 +83,10 @@
 
   @media screen and (min-width: 768px) {
     padding: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 64px;
   }
 }
 

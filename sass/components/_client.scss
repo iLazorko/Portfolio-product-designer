@@ -5,15 +5,23 @@
 .client__list {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1440px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .client__item {
+  flex-basis: calc(100% / 6);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc(100% / 2);
   height: 140px;
   border: 1px solid #181823;
+
+  @media screen and (max-width: 1439px) {
+    flex-basis: calc(100% / 2);
+  }
 }
 
 .client__link {

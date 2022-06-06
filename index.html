@@ -250,12 +250,14 @@
       <!-- ----------------------------SKILLS------------------------ -->
       <section class="skills">
         <div class="container skills__container">
-          <h3 class="skills__title title">Skillset</h3>
-          <p class="skills__text text">
-            With skills in over 4 different fields of design, I am the perfect
-            person to hire when it comes to a full fledged project. Whatever
-            your needs are, I can pretty much take on any challenge.
-          </p>
+          <div class="skills__textwrap">
+            <h3 class="skills__title title">Skillset</h3>
+            <p class="skills__text text">
+              With skills in over 4 different fields of design, I am the perfect
+              person to hire when it comes to a full fledged project. Whatever
+              your needs are, I can pretty much take on any challenge.
+            </p>
+          </div>
 
           <ul class="skills-list list">
             <li class="skills-list__item">
@@ -375,11 +377,14 @@
       <!-- ----------------PROJECTS------------------------------ -->
       <section class="projects" id="projects">
         <div class="container projects__container">
-          <h2 class="projects__title title-small">MY PROJECTS</h2>
-          <h3 class="projects__subtitle title">
-            Work that I’ve done for the past 8 years
-          </h3>
-          <ul class="projects-list list">
+          <div class="projects__wrap">
+            <h2 class="projects__title title-small">MY PROJECTS</h2>
+            <h3 class="projects__subtitle title">
+              Work that I’ve done for the past 8 years
+            </h3>
+          </div>
+
+          <ul class="projects-list list projects__wrap">
             <li class="projects-list__item">
               <a href="" class="link">
                 <picture>
@@ -396,6 +401,13 @@
                       ./img/projects/project1-tablet@2x.jpg 2x
                     "
                     media="(max-width:1439px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/project1-desktop.jpg    1x,
+                      ./img/projects/project1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1440px)"
                   />
                   <img
                     src="./img/projects/project1-mobile.jpg"
@@ -432,7 +444,13 @@
                     "
                     media="(max-width:1439px)"
                   />
-
+                  <source
+                    srcset="
+                      ./img/projects/project2-desktop.jpg    1x,
+                      ./img/projects/project2-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
                   <img
                     src="./img/projects/project2-mobile.jpg"
                     alt="Restaurant photo 2"
@@ -468,7 +486,13 @@
                     "
                     media="(max-width:1439px)"
                   />
-
+                  <source
+                    srcset="
+                      ./img/projects/project3-desktop.jpg    1x,
+                      ./img/projects/project3-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
                   <img
                     src="./img/projects/project3-mobile.jpg"
                     alt="Restaurant photo 3"
@@ -504,7 +528,13 @@
                     "
                     media="(max-width:1439px)"
                   />
-
+                  <source
+                    srcset="
+                      ./img/projects/project4-desktop.jpg    1x,
+                      ./img/projects/project4-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
                   <img
                     src="./img/projects/project4-mobile.jpg"
                     alt="Restaurant photo 4"
@@ -524,6 +554,7 @@
               </a>
             </li>
           </ul>
+          <a href="" class="projects__btn link">VIeW ALL PROJECTS</a>
         </div>
       </section>
 
@@ -566,6 +597,13 @@
                   ./img/network/insta-tablet@2x.jpg 2x
                 "
                 media="(max-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./img/network/insta-desktop.jpg    1x,
+                  ./img/network/insta-desktop@2x.jpg 2x
+                "
+                media="(min-width:1440px)"
               />
               <img
                 src="./img/network/insta-tablet.jpg"
@@ -636,7 +674,14 @@
                         ./img/blogs/blogs1-mobile.jpg    1x,
                         ./img/blogs/blogs1-mobile@2x.jpg 2x
                       "
-                      media="(max-width:360px)"
+                      media="(max-width:1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/blogs/blogs1-desktop.jpg    1x,
+                        ./img/blogs/blogs1-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1440px)"
                     />
                     <img
                       src="./img/blogs/blogs1-mobile.jpg"
@@ -661,7 +706,14 @@
                         ./img/blogs/blogs2-mobile.jpg    1x,
                         ./img/blogs/blogs2-mobile@2x.jpg 2x
                       "
-                      media="(max-width:360px)"
+                      media="(max-width:1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/blogs/blogs2-desktop.jpg    1x,
+                        ./img/blogs/blogs2-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1440px)"
                     />
                     <img
                       src="./img/blogs/blogs2-mobile.jpg"
@@ -685,7 +737,14 @@
                         ./img/blogs/blogs3-mobile.jpg    1x,
                         ./img/blogs/blogs3-mobile@2x.jpg 2x
                       "
-                      media="(max-width:360px)"
+                      media="(max-width:1439px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/blogs/blogs3-desktop.jpg    1x,
+                        ./img/blogs/blogs3-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1440px)"
                     />
                     <img
                       src="./img/blogs/blogs3-mobile.jpg"
@@ -752,6 +811,13 @@
                   "
                   media="(max-width:1439px)"
                 />
+                <source
+                  srcset="
+                    ./img/photography/photo1-desktop.jpg    1x,
+                    ./img/photography/photo1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)"
+                />
                 <img
                   src="./img/photography/photo1-mobile.jpg"
                   alt="country's photo"
@@ -773,6 +839,13 @@
                     ./img/photography/photo2-tablet@2x.jpg 2x
                   "
                   media="(max-width:1439px)"
+                />
+                <source
+                  srcset="
+                    ./img/photography/photo2-desktop.jpg    1x,
+                    ./img/photography/photo2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)"
                 />
                 <img
                   src="./img/photography/photo2-mobile.jpg"
@@ -796,6 +869,13 @@
                   "
                   media="(max-width:1439px)"
                 />
+                <source
+                  srcset="
+                    ./img/photography/photo3-desktop.jpg    1x,
+                    ./img/photography/photo3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)"
+                />
                 <img
                   src="./img/photography/photo3-mobile.jpg"
                   alt="country's photo"
@@ -817,6 +897,13 @@
                     ./img/photography/photo4-tablet@2x.jpg 2x
                   "
                   media="(max-width:1439px)"
+                />
+                <source
+                  srcset="
+                    ./img/photography/photo4-desktop.jpg    1x,
+                    ./img/photography/photo4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)"
                 />
                 <img
                   src="./img/photography/photo4-mobile.jpg"

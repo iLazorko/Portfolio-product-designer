@@ -1,6 +1,19 @@
 .skills__container {
   padding-top: 64px;
   padding-bottom: 64px;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.skills__textwrap {
+  @media screen and (min-width: 1440px) {
+    flex-basis: calc((100% - 48px) / 3);
+    padding-right: 48px;
+    margin-right: 24px;
+  }
 }
 
 .skills__title {
@@ -19,24 +32,43 @@
   }
 }
 
-.skills-list__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 48px;
-  }
-}
-
 .skills-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: flex;
     flex-wrap: wrap;
     margin: -24px -12px;
   }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 12px) / 3 * 2);
+    margin-bottom: -48px;
+  }
 }
 
 .skills-list__item {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1439px) {
     flex-basis: calc((100% - 2 * 24px) / 2);
     margin: 24px 12px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 48px;
+    padding-right: 48px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    @media screen and (min-width: 1440px) {
+      margin-right: 24px;
+    }
   }
 }
 

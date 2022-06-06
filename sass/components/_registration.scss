@@ -6,6 +6,13 @@
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 182px;
+    padding-right: 182px;
+  }
 }
 
 .container__wrap {
